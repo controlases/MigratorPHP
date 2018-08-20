@@ -1,0 +1,41 @@
+.cd {
+    max-height: 400px;
+    overflow-y: scroll;
+    display: block;
+    color: #fff;
+    background: #2c3643;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+#loader{
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+
+#loader .spinner{
+	width: 120px;
+	height: 120px;
+	border:20px solid #fff;
+	border-top-color:#2196f3;
+	display: block;
+	margin:15% auto;
+	border-radius: 500px;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
